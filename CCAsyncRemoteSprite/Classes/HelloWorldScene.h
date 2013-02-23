@@ -13,7 +13,7 @@ public:
     static cocos2d::CCScene* scene();
     
     // a selector callback
-    void menuCloseCallback(CCObject* pSender);
+    void itemCallback(CCObject* pSender);
 
     // preprocessor macro for "static create()" constructor ( node() deprecated )
     CREATE_FUNC(HelloWorld);
