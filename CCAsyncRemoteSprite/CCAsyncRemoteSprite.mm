@@ -20,12 +20,13 @@ bool CCAsyncRemoteSprite::init(const char *url) {
     retain();
     [[HttpCache sharedInstance] cacheUrl:@(url) success:^(NSString *path) {
         auto texture = CCTextureCache::sharedTextureCache()->addImage([path UTF8String]);
-        if (!texture) return;
-        setTexture(texture);
-        CCRect rect = CCRectZero;
-        rect.size = texture->getContentSize();
-        setTextureRect(rect);
-        if (_success) _success();
+        if (texture) {
+            setTexture(texture);
+            CCRect rect = CCRectZero;
+            rect.size = texture->getContentSize();
+            setTextureRect(rect);
+            if (_success) _success();
+        }
         release();
     } failure:^{
         release();
