@@ -217,6 +217,7 @@
 		877343FA16D91BB20069F5EE /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 877343F016D91BB20069F5EE /* AFXMLRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		877343FB16D91BB20069F5EE /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 877343F216D91BB20069F5EE /* UIImageView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		877343FE16D91BC90069F5EE /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 877343FC16D91BC90069F5EE /* HelloWorldScene.cpp */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		877BD44616D9EB1B002FAF99 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 877BD44516D9EB1B002FAF99 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -682,6 +683,7 @@
 		877343F216D91BB20069F5EE /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
 		877343FC16D91BC90069F5EE /* HelloWorldScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = Classes/HelloWorldScene.cpp; sourceTree = "<group>"; };
 		877343FD16D91BC90069F5EE /* HelloWorldScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
+		877BD44516D9EB1B002FAF99 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -707,6 +709,7 @@
 		877340F516D918570069F5EE = {
 			isa = PBXGroup;
 			children = (
+				877BD44516D9EB1B002FAF99 /* README.md */,
 				8773411116D918570069F5EE /* CCAsyncRemoteSprite */,
 				8773410016D918570069F5EE /* Frameworks */,
 				877340FF16D918570069F5EE /* Products */,
@@ -1690,6 +1693,7 @@
 				8773412616D918570069F5EE /* Icon@2x.png in Resources */,
 				8773412816D918570069F5EE /* iTunesArtwork in Resources */,
 				877341BE16D918580069F5EE /* ChangeLog in Resources */,
+				877BD44616D9EB1B002FAF99 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

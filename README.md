@@ -15,6 +15,6 @@ for cocos2dx-2.x ios, using AFNetwork
     });
     auto menu = CCMenu::create(item, NULL);
     auto size = CCDirector::sharedDirector()->getWinSize();
-    menu->setPosition(ccp(size.width/2, size.height/2));
+    menu->setPosition({size.width/2, size.height/2});
     addChild(menu);
     
