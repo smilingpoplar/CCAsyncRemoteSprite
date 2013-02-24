@@ -218,6 +218,7 @@
 		877343FB16D91BB20069F5EE /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 877343F216D91BB20069F5EE /* UIImageView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		877343FE16D91BC90069F5EE /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 877343FC16D91BC90069F5EE /* HelloWorldScene.cpp */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		877BD44616D9EB1B002FAF99 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 877BD44516D9EB1B002FAF99 /* README.md */; };
+		877BD44916DA2635002FAF99 /* CCAsyncRemoteMenuItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 877BD44716DA2635002FAF99 /* CCAsyncRemoteMenuItem.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -684,6 +685,8 @@
 		877343FC16D91BC90069F5EE /* HelloWorldScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = Classes/HelloWorldScene.cpp; sourceTree = "<group>"; };
 		877343FD16D91BC90069F5EE /* HelloWorldScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
 		877BD44516D9EB1B002FAF99 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		877BD44716DA2635002FAF99 /* CCAsyncRemoteMenuItem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCAsyncRemoteMenuItem.cpp; sourceTree = "<group>"; };
+		877BD44816DA2635002FAF99 /* CCAsyncRemoteMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAsyncRemoteMenuItem.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1597,6 +1600,8 @@
 		877343AD16D9185B0069F5EE /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				877BD44816DA2635002FAF99 /* CCAsyncRemoteMenuItem.h */,
+				877BD44716DA2635002FAF99 /* CCAsyncRemoteMenuItem.cpp */,
 				877343D616D91B190069F5EE /* CCAsyncRemoteSprite.h */,
 				877343D716D91B190069F5EE /* CCAsyncRemoteSprite.mm */,
 				877343D816D91B190069F5EE /* HttpCache.h */,
@@ -1893,6 +1898,7 @@
 				877343FA16D91BB20069F5EE /* AFXMLRequestOperation.m in Sources */,
 				877343FB16D91BB20069F5EE /* UIImageView+AFNetworking.m in Sources */,
 				877343FE16D91BC90069F5EE /* HelloWorldScene.cpp in Sources */,
+				877BD44916DA2635002FAF99 /* CCAsyncRemoteMenuItem.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

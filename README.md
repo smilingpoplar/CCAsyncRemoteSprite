@@ -8,13 +8,15 @@ for cocos2dx-2.x ios, using AFNetwork
 
 ### Usage
 
-    auto sprite = CCAsyncRemoteSprite::create("http://smilingpoplar.github.com/CCAsyncRemoteSprite/avatar.png");
-    auto item = CCMenuItemSprite::create(sprite, NULL, this, menu_selector(HelloWorld::itemCallback));
-    sprite->onSuccess([=]() {
-        item->setContentSize(sprite->getContentSize());
-    });
-    auto menu = CCMenu::create(item, NULL);
+    const char *url = "http://smilingpoplar.github.com/CCAsyncRemoteSprite/avatar.png";
     auto size = CCDirector::sharedDirector()->getWinSize();
-    menu->setPosition({size.width/2, size.height/2});
+    // 1. sprite
+    auto sprite = CCAsyncRemoteSprite::create(url);
+    addChild(sprite);
+    sprite->setPosition({size.width/2, size.height/2});
+    // 2. menu item
+    auto item = CCAsyncRemoteMenuItem::create(url, this, menu_selector(HelloWorld::itemCallback));
+    auto menu = CCMenu::create(item, NULL);
     addChild(menu);
+    menu->setPosition({size.width/2, size.height/2});
     
