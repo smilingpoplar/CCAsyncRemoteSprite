@@ -14,10 +14,10 @@
 class CCAsyncRemoteSprite : public cocos2d::CCSprite {
 public:
     bool init(const char *url,
-              std::function<void (CCAsyncRemoteSprite *asyncRemoteSprite)> success,
+              std::function<void (CCAsyncRemoteSprite *spriteAfterInit)> success,
               std::function<void ()> failure);
     static CCAsyncRemoteSprite* create(const char *url,
-                                       std::function<void (CCAsyncRemoteSprite *asyncRemoteSprite)> success = nullptr,
+                                       std::function<void (CCAsyncRemoteSprite *spriteAfterInit)> success = nullptr,
                                        std::function<void ()> failure = nullptr);
 };
 

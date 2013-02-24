@@ -13,8 +13,8 @@ USING_NS_CC;
 
 bool CCAsyncRemoteMenuItem::init(const char *url, CCObject* target, cocos2d::SEL_MenuHandler selector) {
     retain();
-    CCAsyncRemoteSprite *sprite = CCAsyncRemoteSprite::create(url, [=](CCAsyncRemoteSprite *thisAsyncRemoteSprite) {
-        setContentSize(thisAsyncRemoteSprite->getContentSize());
+    auto sprite = CCAsyncRemoteSprite::create(url, [=](CCAsyncRemoteSprite *spriteAfterInit) {
+        setContentSize(spriteAfterInit->getContentSize());
         release();
     }, [=]() {
         release();

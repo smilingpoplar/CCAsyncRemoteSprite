@@ -13,11 +13,9 @@ using namespace std;
 USING_NS_CC;
 
 bool CCAsyncRemoteSprite::init(const char *url,
-                               function<void (CCAsyncRemoteSprite *thisAsyncRemoteSprite)> success,
+                               function<void (CCAsyncRemoteSprite *spriteAfterInit)> success,
                                function<void ()> failure) {
-    if (!CCSprite::init()) {
-        return false;
-    }
+    if (!CCSprite::init()) return false;
     
     retain();
     [[HttpCache sharedInstance] cacheUrl:@(url) success:^(NSString *path) {
@@ -41,7 +39,7 @@ bool CCAsyncRemoteSprite::init(const char *url,
 }
 
 CCAsyncRemoteSprite* CCAsyncRemoteSprite::create(const char *url,
-                                                 function<void (CCAsyncRemoteSprite *thisAsyncRemoteSprite)> success,
+                                                 function<void (CCAsyncRemoteSprite *spriteAfterInit)> success,
                                                  function<void ()> failure) {
     auto sprite = new CCAsyncRemoteSprite();
     if (sprite && sprite->init(url, success, failure)) {
